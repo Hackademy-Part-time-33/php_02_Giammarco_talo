@@ -24,4 +24,22 @@ foreach ($people as $person) {
 }
 
 
+
+
+
+//~ Traccia 2:
+//~ Dato un array di numeri a scelta, scrivere un programma che calcoli la media solo dei numeri pari contenuti all’interno dell’array.
+
+
+$even = 0;
+$sum = 0;
+$numbers = [12, 11, 42, 64, 26, 3, 40, 7];
+foreach ($numbers as $number) {
+    if ($number % 2 == 0) {
+    $even++;
+    $sum += $number;
+    }
+}
+echo($sum / $even);
+
 ?>
